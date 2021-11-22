@@ -6,15 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Educational_Details extends AppCompatActivity {
+public class Skills_Details extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_educational_details);
+        setContentView(R.layout.activity_skills_details);
     }
-    public void Fromeducational(View view){
-        Intent intent = new Intent(this,Profile.class);
+    public void Fromskills(View view){
+        Intent intent = new Intent(this,Experience.class);
         startActivity(intent);
     }
 }

@@ -10,11 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Experience"
+            android:exported="false"
+            android:label="Experience"
+            android:parentActivityName=".Skills_Details"
+            />
+        <activity
+            android:name=".Profile"
+            android:exported="false"
+            android:label="Profile"
+            android:parentActivityName=".Educational_Details" />
+        <activity
+            android:name=".Skills_Details"
+            android:exported="false"
+            android:label="Skills"
+            android:parentActivityName=".Profile" />
+        <activity
             android:name=".Educational_Details"
             android:exported="false"
             android:label="Education Details"
-            android:parentActivityName=".Personal_Details"
-            />
+            android:parentActivityName=".Personal_Details" />
         <activity
             android:name=".Personal_Details"
             android:exported="false"

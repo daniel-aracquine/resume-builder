@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Dell/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_educational_details.xml" value="0.21770833333333334" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_experience.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_personal_details.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_profile.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_skills_details.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_template.xml" value="0.17753623188405798" />
       </map>
     </option>
