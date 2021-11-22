@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.button);
     }
     public void open_template_activity(View v){
-        Toast.makeText(this, "This is toast", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this,template_activity.class);
         startActivity(intent);
     }

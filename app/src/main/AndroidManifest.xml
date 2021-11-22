@@ -10,11 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Educational_Details"
+            android:exported="false"
+            android:label="Education Details"
+            android:parentActivityName=".Personal_Details"
+            />
+        <activity
             android:name=".Personal_Details"
             android:exported="false"
             android:label="Personal Details"
-            android:parentActivityName=".template_activity"
-            />
+            android:parentActivityName=".template_activity" />
         <activity
             android:name=".template_activity"
             android:exported="false"
