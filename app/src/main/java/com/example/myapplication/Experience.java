@@ -25,5 +25,7 @@ public class Experience extends AppCompatActivity {
 //        res.moveToNext();
 //        String s=res.getString(0);
 //        Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this,Create_pdf.class);
+        startActivity(intent);
     }
 }
