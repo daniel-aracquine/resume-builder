@@ -34,6 +34,7 @@ public class Educational_Details extends AppCompatActivity {
         year12=findViewById(R.id.year12);
         uniGrad=findViewById(R.id.uniGrad);
         gradeGrad=findViewById(R.id.gradeGrad);
+        yearGrad=findViewById(R.id.yearGrad);
         db= new DBHelper(this);
         boolean b=db.insertuserdata("school10",school10.getText().toString());
         b=db.insertuserdata("grade10",grade10.getText().toString());
@@ -43,7 +44,7 @@ public class Educational_Details extends AppCompatActivity {
         b=db.insertuserdata("year12",year12.getText().toString());
         b=db.insertuserdata("uniGrad",uniGrad.getText().toString());
         b=db.insertuserdata("gradeGrad",gradeGrad.getText().toString());
-//        b=db.insertuserdata("yearGrad",yearGrad.getText().toString());
+        b=db.insertuserdata("yearGrad",yearGrad.getText().toString());
 //        Cursor res=db.getdata("uniGrad");
 //        res.moveToNext();
 //        String s=res.getString(0);
