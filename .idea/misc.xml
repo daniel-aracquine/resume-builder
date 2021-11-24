@@ -10,10 +10,14 @@
         <entry key="..\:/Users/Dell/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_profile.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_skills_details.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_template.xml" value="0.17753623188405798" />
+        <entry key="..\:/oomproject/tryfinal/resume-builder-1/app/src/main/res/layout/activity_educational_details.xml" value="0.17481884057971014" />
+        <entry key="..\:/oomproject/tryfinal/resume-builder-1/app/src/main/res/layout/activity_experience.xml" value="0.12760416666666666" />
+        <entry key="..\:/oomproject/tryfinal/resume-builder-1/app/src/main/res/layout/activity_profile.xml" value="0.17481884057971014" />
+        <entry key="..\:/oomproject/tryfinal/resume-builder-1/app/src/main/res/layout/activity_skills_details.xml" value="0.17481884057971014" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
