@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -10,11 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Create_pdf"
+            android:exported="false"
+            android:label="Hello"
+            android:parentActivityName=".Experience"
+            />
+        <activity
             android:name=".Experience"
             android:exported="false"
             android:label="Experience"
-            android:parentActivityName=".Skills_Details"
-            />
+            android:parentActivityName=".Skills_Details" />
         <activity
             android:name=".Profile"
             android:exported="false"
