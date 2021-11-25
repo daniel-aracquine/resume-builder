@@ -32,7 +32,7 @@
                 android:layout_marginStart="11dp"
                 android:layout_marginLeft="11dp"
                 android:layout_marginTop="19dp"
-                android:text="Class 10th Details"
+                android:text="High School"
                 android:textSize="27sp" />
 
             <EditText
@@ -75,7 +75,7 @@
                 android:layout_marginStart="11dp"
                 android:layout_marginLeft="11dp"
                 android:layout_marginTop="27dp"
-                android:text="Class 12th Details"
+                android:text="Intermediate School"
                 android:textSize="27sp" />
 
             <EditText
@@ -118,7 +118,7 @@
                 android:layout_marginStart="11dp"
                 android:layout_marginLeft="11dp"
                 android:layout_marginTop="27dp"
-                android:text="University Details"
+                android:text="Graduation"
                 android:textSize="27sp" />
 
             <EditText

@@ -71,8 +71,8 @@
                 android:layout_marginBottom="25dp"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="DOB (DD/MM/YYYY)"
-                android:inputType="date" />
+                android:hint="Job Title"
+                android:inputType="textMultiLine" />
 
             <EditText
                 android:id="@+id/email"
@@ -120,7 +120,7 @@
                 android:layout_weight="1"
                 android:baselineAligned="false"
                 android:ems="10"
-                android:hint="Address"
+                android:hint="LinkedIn"
                 android:inputType="textPostalAddress" />
 
             <Space
