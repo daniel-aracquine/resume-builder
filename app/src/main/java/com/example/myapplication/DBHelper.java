@@ -38,6 +38,14 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+    public Boolean cleardata ()
+    {
+        SQLiteDatabase DB = this.getWritableDatabase();
+         DB.execSQL("Delete from Userdetails");
+        return true;
+
+    }
+
     public Cursor getdata (String tag)
     {
         SQLiteDatabase DB = this.getWritableDatabase();
