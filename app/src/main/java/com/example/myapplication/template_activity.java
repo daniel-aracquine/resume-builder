@@ -15,7 +15,7 @@ public class template_activity extends AppCompatActivity {
     }
     public void open_personal_details(View view){
         db= new DBHelper(this);
-        boolean b=db.cleardata();
+//        boolean b=db.cleardata();
         Intent intent = new Intent(this,Personal_Details.class);
         startActivity(intent);
     }

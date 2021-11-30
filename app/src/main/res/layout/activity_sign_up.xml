@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context=".MainActivity">
+    tools:context=".signUp">
 
     <TextView
         android:id="@+id/signin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Login"
+        android:text="SIGN UP"
         android:textColor="@color/black"
         android:textSize="35dp"
         android:textStyle="bold"
@@ -47,8 +47,8 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="signup"
-        android:text="Sign Up"
+        android:onClick="login"
+        android:text="LOGIN"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -81,8 +81,8 @@
         android:layout_below="@id/password"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
-        android:onClick="open_template_activity"
-        android:text="Login"
+        android:onClick="signup"
+        android:text="SIGNUP"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

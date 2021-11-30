@@ -10,12 +10,18 @@ import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    DBUser dbu;
+    EditText password;
+    EditText username;
 
     private static final int PERMISSION_REQUEST_CODE =200 ;
 
@@ -27,13 +33,38 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         button = findViewById(R.id.button);
         if (checkPermission()) {
-            Toast.makeText(this, "Permission Granted", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "Permission Granted", Toast.LENGTH_SHORT).show();
         } else {
             requestPermission();
         }
     }
     public void open_template_activity(View v){
-        Intent intent = new Intent(this,template_activity.class);
+
+        dbu = new DBUser(this);
+        username = findViewById(R.id.username);
+        password = findViewById(R.id.password);
+
+        String enteredUserName = username.getText().toString();
+        String enteredPassword = password.getText().toString();
+
+        Cursor res=dbu.getdata(enteredUserName);
+        res.moveToNext();
+        String storedpassword = res.getString(0);
+//        Toast.makeText(getApplicationContext(), enteredPassword + " " + storedpassword, Toast.LENGTH_SHORT).show();
+        if(storedpassword.equals(enteredPassword)){
+            Intent intent = new Intent(this,template_activity.class);
+            startActivity(intent);
+        }
+
+        else{
+            Toast.makeText(getApplicationContext(), "Invalid username or password.", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this,MainActivity.class);
+            startActivity(intent);
+        }
+    }
+
+    public void signup(View v){
+        Intent intent = new Intent(this,signUp.class);
         startActivity(intent);
     }
 

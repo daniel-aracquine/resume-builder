@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".Profile">
 
     <Button
@@ -28,7 +29,7 @@
         android:layout_marginRight="35dp"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Few words about you"
+        android:hint="Describe yourself in one line."
         android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
