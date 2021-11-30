@@ -359,10 +359,19 @@ public class Create_pdf extends AppCompatActivity {
         myPaint.setColor(Color.rgb(105,105, 105));
         canvas.drawText(phnNo,2*(myPageInfo1.getPageWidth()/3),365,myPaint);
 
-
+        File file;
         myPdfDocument.finishPage(myPage1);
 
-        File file=new File(Environment.getExternalStorageDirectory(),"/resume_"+name+"_"+".pdf");
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R)
+        {
+            file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS) + "/resume_"+name+"_"+".pdf");
+        }
+        else
+        {
+            file = new File(Environment.getExternalStorageDirectory() + "/resume_"+name+"_"+".pdf");
+        }
+
+//        file=new File(Environment.getExternalStorageDirectory(),"/resume_"+name+"_"+".pdf");
 
         try {
             myPdfDocument.writeTo(new FileOutputStream(file));
