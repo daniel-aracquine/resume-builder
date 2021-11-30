@@ -6,21 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class template_activity extends AppCompatActivity {
-    DBHelper db;
+public class temp1_preview extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_template);
+        setContentView(R.layout.activity_temp1_preview);
     }
-    public void open_personal_details(View view){
-        db= new DBHelper(this);
-        boolean b=db.cleardata();
+    public void open_personal_details(View v){
         Intent intent = new Intent(this,Personal_Details.class);
-        startActivity(intent);
-    }
-    public void preview1(View view){
-        Intent intent = new Intent(this,temp1_preview.class);
         startActivity(intent);
     }
 }

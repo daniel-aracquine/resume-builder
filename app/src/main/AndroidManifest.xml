@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".temp1_preview"
+            android:exported="false"
+            android:label="Preview"
+            android:parentActivityName=".template_activity"
+            />
+        <activity
             android:name=".signUp"
             android:exported="false" />
         <activity
